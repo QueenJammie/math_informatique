@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>201-PA4-SH Mathématiques appliquées à l'informatique</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <header>
+          <h1>
+            Mathématiques appliquées à l'informatique<br /><br />
+            <smaller class="italic">Notes de cours</smaller><br />
+          </h1>
+        </header>
+      </div>
+      <div class="row">
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="#proposition">Proposition</a></li>
+          <li><a href="#operateursBooleens">Opérateurs booléens</a></li>
+          <li><a href="#propositionEtSomme">Proposition et somme</a></li>
+          <li>
+            <a href="#CombinaisonOperateursBooleens"
+              >Combinaison d'opérateurs booléens</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h3 id="proposition">Propositions</h3>
+        </div>
+        <div class="col">
+          <div class="box">
+            <ol>
+              <em
+                >Exemple: Dire si les énoncés suivants sont des propositions.
+                Dans l'affirmative, établissez les valeurs de vérité.</em
+              ><br />
+              <li>
+                Deux plus deux égale quatre.
+                <p class="reponse">
+                  Oui, c'est une proposition.<br /><span class="italic"
+                    >1: Cette proposition est valide.<br />2 + 2 = 4</span
+                  >
+                </p>
+              </li>
+              <li>
+                Lorsque tu auras terminé ces exercices, révise-toi.
+                <p class="reponse">Non, ce n'est pas une proposition.</p>
+              </li>
+              <li>
+                Ces oiseaux ont deux pattes.
+                <p class="reponse">
+                  Oui, c'est une proposition.<br /><span class="italic"
+                    >1: Sauf s'il parle d'oiseaux amputés, cette proposition est
+                    valide.</span
+                  >
+                </p>
+              </li>
+              <li>
+                Quel est ton nom?
+                <p class="reponse">Non, ce n'est pas une proposition.</p>
+              </li>
+              <li>
+                Il s'appelle Paul.
+                <p class="reponse">
+                  Oui, c'est une proposition.<br /><span class="italic"
+                    >1: Je n'ai aucun moyen de le savoir mais s'il parle de
+                    Paul, c'est bien son nom.</span
+                  >
+                </p>
+              </li>
+              <li>
+                Deux nombres pairs supérieurs à deux est la somme de deux
+                nombres premiers.
+                <p class="reponse">
+                  Oui, c'est une proposition.<br /><span class="italic"
+                    >0: 6 + 7 != à un nom pair</span
+                  >
+                </p>
+              </li>
+            </ol>
+          </div>
+          <h3 id="operateursBooleens">Opérateurs booléens</h3>
+          <div class="box">
+            <ol>
+              <li>Négation ┐<br /><em>se lit 'non'</em></li>
+              <li>
+                Conjonction ^<br /><em
+                  >est la proposition composée / se lit 'et'</em
+                >
+              </li>
+              <li>Disjonction v<br /><em>se lit 'ou'</em></li>
+              <li>
+                Disjonction exclusive +o<br /><em>se lit 'ou exclusif'</em>
+              </li>
+            </ol>
+          </div>
+          <h3 id="propositionEtSomme">Proposition et somme</h3>
+          <div class="box">
+            <ol>
+              Exemples:
+              <li>
+                p: "Ottawa est la capitale de France"<br />
+                q: "Rome est la capitale d'Italie"<br />
+                <em>p v q = 1</em>
+              </li>
+              <li>
+                p: "5 est plus grand que 0"<br />
+                q: "5 est plus que 8"<br />
+                <em>p v q = 1</em>
+              </li>
+              <li>
+                p: "Ottawa est la capitale de France"<br />
+                q: "Rome est la capitale d'Italie"<br />
+                <em>p +o q = 1</em>
+              </li>
+              <li>
+                p: "5 est plus grand que 0"<br />
+                q: "5 est plus que 3"<br />
+                <em>p +o q = 0</em>
+              </li>
+            </ol>
+          </div>
+          <h3 id="CombinaisonOperateursBooleens">
+            Combinaison d'opérateurs booléens
+          </h3>
+          <div class="box">
+            <h4>La prorité des opérateurs booléens</h4>
+            <ol>
+              <li>Les parenthèses</li>
+              <li>Les négations</li>
+              <li>Les autres opérateurs booléens, de gauche à droite</li>
+            </ol>
+            <h4>Exemples:</h4>
+            <ol>
+              Soit les valeurs
+              <em>p</em
+              >,
+              <em>q</em>
+              et
+              <em>r</em>
+              des propositions. Déterminez les tables de vérité des propositions
+              composées suivantes :<br />
+              <li>
+                p ^ ┐q<br />
+                <h5>Solution:</h5>
+                <table>
+                  <tr>
+                    <th>p</th>
+                    <th>q</th>
+                    <th>┐q</th>
+                    <th>p ^ ┐q</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>1</td>
+                  </tr>
+                </table>
+              </li>
+              <li>
+                p +o ┐(r ^ q)
+                <table>
+                  <tr>
+                    <th>p</th>
+                    <th>q</th>
+                    <th>r</th>
+                    <th>r ^ q</th>
+                    <th>┐(r ^ q)</th>
+                    <th>p +o ┐(r ^ q)</th>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <!-- p -->
+                    <td>1</td>
+                    <!-- q -->
+                    <td>1</td>
+                    <!-- r -->
+                    <td>1</td>
+                    <!-- r et q -->
+                    <td>0</td>
+                    <!-- non (r et q) -->
+                    <td>1</td>
+                    <!-- p ou exclusif (non (r et q))-->
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <!-- p -->
+                    <td>1</td>
+                    <!-- q -->
+                    <td>0</td>
+                    <!-- r -->
+                    <td>0</td>
+                    <!-- r et q -->
+                    <td>1</td>
+                    <!-- non (r et q) -->
+                    <td>0</td>
+                    <!-- 1 disjonction exclusive (non (1 et 0))-->
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <!-- p -->
+                    <td>0</td>
+                    <!-- q -->
+                    <td>1</td>
+                    <!-- r -->
+                    <td>0</td>
+                    <!-- r et q -->
+                    <td>1</td>
+                    <!-- non (r et q)-->
+                    <td>0</td>
+                    <!-- 1 disjonction exclusive (non (1)) -->
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <!-- p -->
+                    <td>0</td>
+                    <!-- q -->
+                    <td>0</td>
+                    <!-- r -->
+                    <td>1</td>
+                    <!-- r et q -->
+                    <td>0</td>
+                    <!-- non (r et q)-->
+                    <td>1</td>
+                    <!-- 1 ou exclusif (non (0 et 0)) -->
+                  </tr>
+                  <tr>
+                    <td>0</td>
+                    <!-- p -->
+                    <td>1</td>
+                    <!-- q -->
+                    <td>1</td>
+                    <!-- r -->
+                    <td>1</td>
+                    <!-- r et q -->
+                    <td>0</td>
+                    <!-- non (r et q) -->
+                    <td>0</td>
+                    <!-- 0 disjonction exclusive (non (1 et 1)) -->
+                  </tr>
+                  <tr>
+                    <td>0</td>
+                    <!-- p -->
+                    <td>1</td>
+                    <!-- q -->
+                    <td>0</td>
+                    <!-- r -->
+                    <td>0</td>
+                    <!-- r et q -->
+                    <td>1</td>
+                    <!-- non (r et q) -->
+                    <td>1</td>
+                    <!-- 0 ou exclusif (non (1 et 0)) -->
+                  </tr>
+                </table>
+              </li>
+            </ol>
+          <h3>Exemples:</h3>
+          <div class="box">
+            <ol>
+              Traduire les propositions composées suivantes en mots ou sous
+              forme symbolique, selon ce qui est donné.<br />
+              p: Il fait chaud<br />
+              q: C'est ensoleillé<br /><br />
+              <li>
+                Il fait chaud et ensoleillé.<br />
+                <p class="reponse">p ^ q</p>
+              </li>
+              <li>
+                ┐p v q
+                <p class="reponse"
+                  >Ce n'est pas ensoleillé ou c'est ensoleillé</p
+                >
+              </li>
+              <li>
+                Il fait chaud mais ce n'est pas ensoleillé
+                <p class="reponse">p ^ ┐q</p>
+              </li>
+              <li>
+                Soit il fait froid, soit c'est nuageux
+                <p class="reponse">┐p +o ┐q</p>
+              </li>
+            </ol>
+          </div>
+          <h3>Exercices supplémentaires:</h3>
+          <div class="box">
+            <ul class="noList">
+              <li>
+                <ol>
+                  <li>Dire quels énoncés sont des propositions et donner leur valeur de vérité.</li>
+                  <ol type=""a">
+                    <li>
+                      <strong>4 est pair</strong>
+                      <p class="reponse">C'est une proposition V</p>
+                    </li>
+                    <li>
+                      <strong>2 > 3</strong>
+                      <p class="reponse">C'est une proposition F</p>
+                    </li>
+                    <li>
+                      <strong>Un triangle a 4 côtés</strong>
+                      <p class="reponse">C'est une proposition F</p>
+                    </li>
+                    <li>
+                      <strong>Quel temps fait-il?</strong>
+                      <p class="reponse">Ce n'est pas une proposition</p>
+                    </li>
+                  </ol>
+                  <li>2: Soit p: "La température est à 0°C" et q: "Il neige", exprimez en phrase simple les énoncés suivants.</li>
+                  <ol type="a">
+                    <li>
+                      <strong>¬p</strong>
+                      <p class="reponse">La température n'est pas à 0°C</p>
+                    </li>
+                    <li>
+                      <strong>p ^ q</strong>
+                      <p class="reponse">La température est à 0°C et il neige</p>
+                    </li>
+                    <li>
+                      <strong>p v q</strong>
+                      <p class="reponse">La température est à 0°C ou il neige</p>
+                    </li>
+                    <li>
+                      <strong>¬p v ¬q</strong>
+                      <p class="reponse">La température n'est pas à 0°C ou il ne neige pas</p>
+                    </li>
+                    <li>
+                      <strong>¬¬p</strong>
+                      <p class="reponse">La température est à 0°C</p>
+                    </li>
+                  </ol>
+                  <li>
+                    Écrire sous forme symbolique les énoncés suivants en désignant "Je fais mes exercices" par p<br />
+                    "Je relis mes notes de cours" par q<br />
+                    et "Je réussis mes examens" par r.
+                  </li>
+                  <ol type="a">
+                    <li>
+                      <strong>Soit je fais mes exercices, soit je relis mes notes de cours</strong>
+                      <p class="reponse">p +o q</p>
+                    </li>
+                    <li>
+                      <strong>Je ne réussirai pas mes examens</strong>
+                      <p class="reponse">¬r</p>
+                    </li>
+                    <li>
+                      <strong>Je fais mes exercices ou je relis mes notes de cours</strong>
+                      <p class="reponse">p v q</p>
+                    </li>
+                  </ol>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
